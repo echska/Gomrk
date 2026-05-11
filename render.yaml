@@ -1,9 +1,5 @@
 services:
   - type: web
     name: gomrk
-    env: node
-    plan: free
-    branch: main
-    buildCommand: npm install
-    startCommand: npm start
-    autoDeploy: true
+    env: static
+    staticPublishPath: .
